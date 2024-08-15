@@ -1,8 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(52, 52, 52);
+}
+
+.container {
+    min-height: 100vh;
+    background-color: rgb(236, 236, 236);
+    border-radius: 15px;
+    width: 50%;
+}
+
 .topdiv {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .topdiv img {
-    width: 100px;
+    width: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.topdiv h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.middiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
